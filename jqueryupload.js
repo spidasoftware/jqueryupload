@@ -49,7 +49,6 @@
                         processData: false,
                         success: function(data) {
                                 var parsedData = handleData(data, type);
-                                callback.call(self, data);
                                 if (type === 'script') {
                                         $.globalEval(parsedData);
                                 }
